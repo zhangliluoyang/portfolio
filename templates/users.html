@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> users </title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='dove.ico') }}">
+</head>
+<body>
+	<h1> User Profile </h1>
+	<h2> {{ name }} </h2>
+	<p> Hello, {{ name }} (User ID: {{ user_id }}). This is your profile page. </p>
+	<script> src='static/action.js' </script>
+</body>
+</html>

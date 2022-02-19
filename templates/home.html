@@ -1,0 +1,40 @@
+<!-- this is a test page for learning HTML forms; experimenting with different input types -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> my site </title>
+	<link rel="stylesheet" type="text/css" href="./static/style.css">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='dove.ico') }}">
+	<link rel="shortcut icon" href= "./static/assets/dove.ico">
+</head>
+<body>
+	<h1> A simple website </h1>
+	<p> Hello. This is an experiment Home page. </p><br><br>
+	<p> Fill in the form to register as a user. </p>
+	<form>
+		First Name: <input type="text" name='firstname'><br>
+		Last Name: <input type="text" name='lastname'><br>
+		<label for="quantity"> Lucky number: </label>
+		<input type="number" id="quantity" min='0'><br>
+		<label for="email" required="False"> Email: </label>
+		<input type="email" id="email"><br>
+		Password:<input type="password" name='password' minlength='4'><br>
+		Birthday:<input type="date" name='birthday'><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		Cars:<br>
+		<select>
+			<option value='Mustang'>Mustang</option>
+			<option value='Wrangler'>Wrangler</option>
+			<option value='Jimny'>Jimny</option>
+		</select><br>
+		<input type="submit" value="Register!">
+		<input type="reset">
+
+	</form>
+	<script> src='static/action.js' </script>
+</body>
+</html>
